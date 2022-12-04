@@ -1,0 +1,90 @@
+.Contact_Us {
+  position: relative;
+  height: 44px;
+  background-color: #020202;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Poppins-SemiBold";
+}
+.Contact_Us_block {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.Contact_Us .border_bottom {
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  color: #acacac;
+}
+.Contact_Us .address {
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.border_bottom div {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.border_bottom2 {
+  flex-direction: column !important;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+.workers {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.35s ease-out;
+}
+.workers svg path {
+  stroke: #ffffff;
+  transition: all 0.35s ease-out;
+}
+.workers:hover svg path {
+  stroke: #0854fc;
+}
+.workers:hover {
+  color: #0854fc;
+}
+.workers svg:nth-child(2) {
+  margin-left: 8px;
+}
+.telephon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.telephon svg path {
+  fill: #ffffff;
+  transition: all 0.35s ease-out;
+}
+.telephon svg:hover path {
+  fill: #0854fc;
+}
+.telephon svg:nth-child(1) {
+  margin-left: 14px;
+}
+.telephon svg:nth-child(2) {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .Contact_Us .border_bottom:nth-child(1) {
+    display: none;
+  }
+  .telephon {
+    display: none;
+  }
+}

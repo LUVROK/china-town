@@ -1,0 +1,114 @@
+.Navbar {
+  position: relative;
+  height: 92px;
+  background-color: #ffffff;
+  width: 100%;
+  border-bottom: 1px solid #cacdd8;
+  font-size: 14px;
+  font-family: "Poppins-SemiBold";
+}
+.Navbar_block {
+  position: relative;
+  height: 100%;
+  width: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nvb_left {
+  position: relative;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nvb_left svg path {
+  fill: #0156ff;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.nvb_left svg:hover path {
+  fill: #000000;
+}
+.nvb_right {
+  position: relative;
+  width: 20%;
+}
+.profile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.profile svg {
+  position: relative;
+  cursor: pointer;
+}
+.profile svg path {
+  fill: #000000;
+  transition: all 0.35s ease-out;
+}
+.profile svg:hover path {
+  fill: #0156ff;
+}
+.profile svg:nth-child(1) {
+  margin-right: 25px;
+}
+.profile svg:nth-child(2) {
+  margin-right: 28px;
+}
+.profile img {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  border: 2px solid #0156ff00;
+  border-radius: 50px;
+}
+.profile img:hover {
+  border: 2px solid #0156ff90;
+}
+.nvb_link {
+  position: relative;
+  cursor: pointer;
+  color: #000000;
+  transition: all 0.35s ease-out;
+}
+.btnLink {
+  position: relative;
+  cursor: pointer;
+  color: #0156ff;
+  padding: 8px 26px;
+  border: 2px solid #0156ff;
+  border-radius: 50px;
+  transition: all 0.5s ease-out;
+}
+.btnLink:hover {
+  border: 2px solid #003db8;
+  color: #003db8;
+}
+.nvb_link:hover {
+  color: #0854fc;
+}
+
+.nvb_link:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #000000;
+  transform: scaleX(0);
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+.nvb_link:hover:after {
+  transform: scaleX(1);
+  border-bottom: solid 2px #0854fc;
+}
+.nvb_link.fromleftborder:after {
+  transform-origin: 0 50%;
+}

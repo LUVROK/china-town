@@ -2,13 +2,19 @@
   "name": "china_town",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pawelprogr.github.io/300gi4930295/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "flubber": "^0.4.2",
+    "gh-pages": "^4.0.0",
+    "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pose": "^4.0.10",
     "react-scripts": "5.0.1",
+    "react-svg-morph": "^0.2.1",
     "sass": "^1.56.1",
     "web-vitals": "^2.1.0"
   },
@@ -16,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

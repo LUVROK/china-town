@@ -5,6 +5,7 @@
   color: #ffffff;
   font-size: 12px;
   font-family: "Poppins-SemiBold";
+  overflow: hidden;
 }
 .Contact_Us_block {
   position: relative;
@@ -83,6 +84,19 @@
 @media screen and (max-width: 768px) {
   .Contact_Us .border_bottom:nth-child(1) {
     display: none;
+  }
+  .Contact_Us_block {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .border_bottom2 {
+    margin-left: 13px;
+    white-space: nowrap;
+  }
+  .workers {
+    margin-left: 72px;
+    white-space: nowrap;
   }
   .telephon {
     display: none;

@@ -23,8 +23,15 @@
   width: 80%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+.nvb_left .nvb_left_logo {
+  width: 34px;
+  height: 41px;
+}
+.nvb_left .nvb_left_logo path {
+  fill: #0156ff;
 }
 .nvb_left svg path {
   fill: #0156ff;
@@ -62,9 +69,12 @@
 .profile svg:nth-child(1) {
   margin-right: 25px;
   padding-top: 3px;
+  min-width: 19px;
+  min-height: 22px;
 }
 .profile svg:nth-child(2) {
   margin-right: 28px;
+  min-width: 25px;
 }
 
 // .profile .closeSvg:nth-child(1) path {
@@ -96,9 +106,12 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  margin-left: 55px;
+  left: 55px;
   transition: opacity 0.5s ease-out;
   z-index: 99;
+}
+.nvb_Links .nvb_link {
+  white-space: nowrap;
 }
 .nvb_link {
   position: relative;
@@ -155,9 +168,87 @@
   padding: 0px;
   padding-left: 30px;
   border: none;
-  color: #a2a6b0;
+  color: #cacdd8;
   font-family: "Poppins-Regular";
 }
 .SearchInput input:focus {
   outline: none;
+}
+.SearchInput svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+.SearchInput svg path {
+  fill: #000000;
+}
+.SearchInput svg:hover path {
+  fill: #0854fc;
+}
+.menu {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .Navbar_block {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .nvb_left .nvb_left_logo {
+    position: relative;
+    width: 18px;
+    height: 24px;
+  }
+  .nvb_left_logo_background {
+    position: absolute;
+    top: -58px;
+    left: -5px;
+    width: 65px;
+    height: 45px;
+    background-color: #0156ff;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    display: flex;
+    padding-top: 8px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .nvb_left .nvb_left_logo path {
+    fill: #ffffff;
+  }
+  .Navbar {
+    height: 64px;
+    background-color: #0156ff;
+    border-bottom: none;
+  }
+  .profile svg path {
+    fill: #ffffff;
+  }
+  .profile svg:hover path {
+    fill: #000000;
+  }
+  .profile svg:nth-child(1) {
+    // margin-right: 12.5px;
+    display: none;
+  }
+  .profile svg:nth-child(2) {
+    margin-right: 14px;
+  }
+  .SearchInput {
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 75% !important;
+    height: 38px;
+    left: 38px;
+  }
+  .SearchInput svg {
+    left: 10px;
+    right: auto;
+  }
+  .menu {
+    display: flex;
+  }
 }
